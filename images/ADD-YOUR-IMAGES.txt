@@ -1,0 +1,9 @@
+Add your own images to this folder. Use these exact filenames:
+- deakin.jpg
+- jatin.jpg
+- data_science.webp
+- network.webp
+- mountain_1.jpg
+- mountain_2.jpg
+- mountain_3.jpg
+- mountain_4.jpg
