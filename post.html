@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New Post - DEV@Deakin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">DEV@Deakin</a>
+    <a href="login.html">Login</a>
+  </nav>
+
+  <div class="post-box">
+    <h2>New Post</h2>
+
+    <p>Select Post Type:</p>
+    <label><input type="radio" name="postType" value="question" checked> Question</label>
+    <label><input type="radio" name="postType" value="article"> Article</label>
+
+    <form id="postForm">
+      <h3 id="postHeading">What do you want to ask?</h3>
+
+      <label>Title</label>
+      <input type="text" id="postTitle" placeholder="Enter title" required>
+
+      <label id="descriptionLabel">Describe your problem</label>
+      <textarea rows="6" placeholder="Write here..." required></textarea>
+
+      <label>Tags</label>
+      <input type="text" placeholder="Add up to 3 tags">
+
+      <button type="submit">Post</button>
+    </form>
+  </div>
+
+  <script>
+    const radios = document.querySelectorAll('input[name="postType"]');
+
+    radios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        const isArticle = radio.value === 'article' && radio.checked;
+        if (radio.checked) {
+          document.getElementById('postHeading').textContent =
+            isArticle ? 'Write your article' : 'What do you want to ask?';
+          document.getElementById('descriptionLabel').textContent =
+            isArticle ? 'Article Content' : 'Describe your problem';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

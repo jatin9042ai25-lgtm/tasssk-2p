@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DEV@Deakin - Personal Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+
   <nav>
     <a href="#about">About</a>
     <a href="#work">Work</a>
     <a href="#photos">Photos</a>
     <a href="#subscribe">Subscribe</a>
+
+    <a href="post.html">Post</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
   </nav>
+
 
   <header class="banner">
     <img src="images/deakin.jpg" alt="Deakin University banner">
@@ -20,14 +29,20 @@
   </header>
 
   <main>
+
     <section id="about" class="profile">
-      <img class="profile-photo" src="images/jatin.jpg" alt="Profile photo">
-      <h1>I am a full-stack web developer.</h1>
-      <p>Welcome to my personal website. I enjoy learning web development, programming and technology.</p>
+      <img src="images/jatin.jpg" alt="Jatin" class="profile-photo">
+
+      <h1>I am a full-stack web developer based in Chandigarh, India.</h1>
+
+      <p>
+        Welcome to my personal website. I enjoy learning
+        web development, programming and technology.
+      </p>
     </section>
 
     <section id="work" class="section">
-      <h2>Here's what I've done so far</h2>
+      <h2>My Projects</h2>
       <div class="projects">
         <article class="card">
           <img src="images/data_science.jpg" alt="Data analysis project">
@@ -43,12 +58,60 @@
     </section>
 
     <section id="photos" class="section">
-      <h2>My photos</h2>
+      <h2>My Gallery</h2>
       <div class="gallery">
         <img src="images/mountain_1.jpg" alt="Gallery photo 1">
         <img src="images/mountain_2.jpg" alt="Gallery photo 2">
-       
+
         <img src="images/mountain_4.jpg" alt="Gallery photo 4">
+      </div>
+    </section>
+
+    <section id="articles" class="section">
+      <h2>Featured Articles</h2>
+
+      <div class="cards">
+        <div class="card">
+          <img src="images/article1.jpg" alt="Rocket Launch">
+          <h3>Space Exploration</h3>
+          <p>Learning about new discoveries in space.</p>
+        </div>
+
+        <div class="card">
+          <img src="images/article2.jpg" alt="Astronaut">
+          <h3>Life in Space</h3>
+          <p>Exploring how astronauts work in space.</p>
+        </div>
+
+        <div class="card">
+          <img src="images/article3.jpg" alt="Galaxy">
+          <h3>Dark Matter</h3>
+          <p>Understanding the mysteries of the universe.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tutorials" class="section">
+      <h2>Featured Tutorials</h2>
+
+      <div class="cards">
+        <div class="card">
+          <img src="images/tutorial1.jpg" alt="HTML">
+          <h3>HTML for Beginners</h3>
+          <p>Learn the basics of HTML.</p>
+        </div>
+
+        <div class="card">
+          <img src="images/tutorial2.jpg" alt="CSS">
+          <h3>CSS Basics</h3>
+          <p>Learn how to style a website.</p>
+        </div>
+
+        <div class="card">
+          <img src="images/tutorial3.jpg" alt="JavaScript">
+          <h3>JavaScript Basics</h3>
+          <p>Learn basic JavaScript concepts.</p>
+        </div>
       </div>
     </section>
 
@@ -61,9 +124,24 @@
       </form>
       <p id="message" role="status" aria-live="polite"></p>
     </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p>Email: jatin9042@chitkara.edu.in</p>
+    </section>
+
+
+
+
+
+
+
+
   </main>
 
   <footer>DEV@Deakin Personal Website</footer>
+
   <script src="script.js"></script>
 </body>
+
 </html>
